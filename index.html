@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,25 +5,138 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+
+* {
+
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  background: #27282c;
+}
+
+.button {
+  position: relative;
+  padding: 12px 30px;
+  font-size: 1 rem;
+  color: var(--color);
+  border: 0.5px solid rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  text-shadow: 0 0 15px var(--color);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.button:hover {
+  color: #fff;
+  border: 2px solid rgba(0, 0, 0, 0);
+  box-shadow: 0 0 0px var(--color);
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--color);
+  z-index: -1;
+  transform: scale(0);
+  transition: 0.5s;
+}
+
+.button:hover::before {
+  transform: scale(1);
+  transition-delay: 0.5s;
+  box-shadow: 0 0 10px var(--color),
+    0 0 30px var(--color),
+    0 0 60px var(--color);
+}
+
+
+</style>
 
 </head>
 
 <body>
-    <button style="color:blue,aling:centre;"><a href="micro.html">Micro Autotech</a></button><br>
-    <button><a href="rosemerta.html">Rosemerta</a></button><br>
-    <button><a href="grl.html">GRLEngineers</a></button><br>
-    <button><a href="motozen.html">Motozen</a></button><br>
-    <button><a href="mijo.html">Mijo</a></button><br>
-    <button><a href="ecogas.html">Ecogas</a></button><br>
-    <button><a href="syn.html">SYN Auto</a></button><br>
-    <button><a href="hovel.html">Hovel</a></button><br>
-    <button><a href="merc.html">Mercyda</a></button><br>
-    <button><a href="ridaus.html">Raidaus</a></button><br>
-    <button><a href="tasva.html">Tasva</a></button><br>
-    <button><a href="gemini.html">Gemini</a></button><br>
-    <button><a href="Jv.html">JV Auto Solutions</a></button><br>
-    <button><a href="3gb.html">3GB Technology Pvt Ltd</a></button><br>
-    <button><a href="godawari.html">Godawari</a></button>
+<div class="container">
+  <a class="button" href="micro.html" style="--color:#1e9bff;">
+
+    Micro Auto
+  </a>
+
+  <a class="button" href="rosemerta.html" style="--color: #ff1867;">
+  
+    Rosemerta
+  </a>
+
+  <a class="button" href="grl.html" style="--color: #6eff3e;">
+
+    GRL ENG
+  </a>
+<a class="button" href="motozen.html" style="--color:#1e9bff;">
+ 
+  Motozen
+  </a>
+  <a class="button" href="mijo.html" style="--color: #ff1867;">
+ 
+ Mijo
+  </a>
+  <a class="button" href="ecogas.html" style="--color: #6eff3e;">
+   
+   EcoGas
+  </a>
+<a class="button" href="merc.html" style="--color:#1e9bff;">
+  
+  Mercyda
+  </a>
+  <a class="button" href="hovel.html" style="--color: #ff1867;">
+    
+ Hovel
+  </a>
+<a class="button" href="syn.html" style="--color: #6eff3e;">
+  
+   SYN
+  </a>
+<a class="button" href="ridaus.html" style="--color:#1e9bff;">
+  
+Ridaus
+  </a>
+  <a class="button" href="tasva.html" style="--color: #ff1867;">
+   
+    Tasva
+  </a>
+  <a class="button" href="gemini.html" style="--color: #6eff3e;">
+   
+    Gemini
+  </a>
+ <a class="button" href="Jv.html" style="--color:#1e9bff;">
+
+    JV Auto
+  </a>
+  <a class="button" href="3gb.html" style="--color: #ff1867;">
+  
+ 3GB Tech
+  </a>
+
+  <a class="button" href="godawari.html" style="--color: #6eff3e;">
+   
+    Godawari
+  </a>
+</div>
 </body>
 
 </html>
